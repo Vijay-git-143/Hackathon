@@ -81,7 +81,7 @@ while True:
 
     # Logic: no face = distraction, eyes closed = drowsy
     if not face_detected:
-        alert_reason = "😵 Face Not Detected!"
+        alert_reason = "Mundu chudara waste felloww!!!"
         if not beeping:
             stop_beep_flag = False
             threading.Thread(target=continuous_beep, daemon=True).start()
@@ -90,7 +90,7 @@ while True:
         closed_eyes_frames += 1
 
         if closed_eyes_frames >= ALARM_THRESHOLD:
-            alert_reason = "😴 Eyes Closed!"
+            alert_reason = "Kallu teravaraa waste felloowww!!!"
             if not beeping:
                 stop_beep_flag = False
                 threading.Thread(target=continuous_beep, daemon=True).start()
